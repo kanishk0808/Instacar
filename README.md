@@ -1,3 +1,9 @@
+# TITLE
+## CHOTA TITLE
+### AUR CHOTA 
+
+`code example`
+
 Technologies used: HTML, CSS, Bootstrap, JavaScript, node.js, Express.
 When I got the project I started of a bit overzealous and tried out about every styling options possible. The result was the worst thing I had ever seen. So, I deleted the project and started over.
 I am still very new to development so it took me a some time to get started, I designed a navbar with a brand name and the customer support tab which is clickable and redirects the user to call a phone number.
