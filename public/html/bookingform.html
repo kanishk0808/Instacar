@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transporter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2d906b476.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/transporter.jpg" width="50" height="50" class="d-inline-block" alt="">
+                     Transporter
+                </a>
+                <a class="alignright" href="tel:+91-8604623919">
+                    <div class="customersupport">
+                        <i class="fas fa-phone-square-alt fa-3x"></i>
+                        <div class="float-right">
+                            <span id="support" class="d-none d-md-block float-right align-top">24X7 Support</span>
+                            <div id="telno" class="d-none d-md-block float-right align-bottom">+91-8604623919</div>
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <div class="container form" style="padding: 2rem">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                    <label class="form-check-label" for="inlineRadio1">ONE WAY</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">ROUND TRIP</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">MULTI CITY</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio4">PACKAGES</label>
+                </div>
+                <form style="padding: 2rem" method="GET">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputOrigin">Origin</label>
+                            <input list="origin" type="text" class="form-control" id="inputOrigin" placeholder="Origin" required>
+                            <datalist id="origin"></datalist>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputDestination">Destination</label>
+                            <input list="destination" type="text" class="form-control" id="inputDestination" placeholder="Destination" required>
+                            <datalist id="destination"></datalist>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputOriginAddress">Origin Address</label>
+                        <input type="text" class="form-control" id="inputOriginAddress" placeholder="1234 Main St, Apartment, Studio, or Floor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDestinationAddress">Destination Address</label>
+                        <input type="text" class="form-control" id="inputDestinationAddress" placeholder="1234 Main St, Apartment, Studio, or Floor" required>
+                    </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                            <label for="depart_date">Depart Date</label>
+                            <input type="date" id="depart" name="trip-depart" value="2019-09-07" min="2019-09-07" max="2020-12-31" required>
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="return_date">Return Date</label>
+                                <input type="date" id="return" name="trip-return" value="2019-09-07" min="2019-09-07" max="2020-12-31" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">BOOK NOW</button>
+                </form>
+        </div>
+              
+
+        
+        <script src="../script/booking-form.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="../script/autocomplete.js"></script>
+    
+</body>
+</html>
